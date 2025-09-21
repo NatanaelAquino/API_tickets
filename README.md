@@ -189,10 +189,5 @@ curl -Method PATCH -Uri http://localhost:3333/tickets/<id>/closed -ContentType '
 Desenvolvido por **Natanael Aquino**
 Projeto de prática do curso **Rocketseat** 🚀
 
-```
 
----
-
-Quer que eu já te gere esse **README.md pronto em arquivo** pra você só colar no repositório?
-```
 
