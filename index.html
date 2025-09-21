@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Tickets - Documentação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #8257e6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #8257e6;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎫 API Tickets</h1>
+    <p>API para gerenciamento de tickets de suporte (Node.js puro)</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📖 Sobre</h2>
+      <p>
+        Esta API foi desenvolvida como prática no curso da <strong>Rocketseat</strong>.  
+        Ela permite <strong>criar, listar, atualizar, fechar e remover tickets</strong>.  
+        Os dados são armazenados em <code>src/database/db.json</code>.
+      </p>
+    </section>
+
+    <section>
+      <h2>⚙️ Requisitos</h2>
+      <ul>
+        <li>Node.js 18+</li>
+        <li>NPM instalado</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>▶️ Como executar</h2>
+      <pre>
+git clone &lt;url-do-repositorio&gt;
+cd api
+npm install
+npm run dev
+      </pre>
+      <p>Servidor disponível em: <code>http://localhost:3333</code></p>
+    </section>
+
+    <section>
+      <h2>📌 Endpoints principais</h2>
+      <h3>1) Criar ticket</h3>
+      <p><strong>POST</strong> <code>/tickets</code></p>
+      <pre>{
+  "equipamento": "Impressora Epson",
+  "description": "Não imprime",
+  "user_name": "João"
+}</pre>
+
+      <h3>2) Listar tickets</h3>
+      <p><strong>GET</strong> <code>/tickets</code></p>
+      <p>Query opcional: <code>?status=open</code> ou <code>?status=closed</code></p>
+
+      <h3>3) Atualizar ticket</h3>
+      <p><strong>PUT</strong> <code>/tickets/:id</code></p>
+
+      <h3>4) Fechar ticket</h3>
+      <p><strong>PATCH</strong> <code>/tickets/:id/closed</code></p>
+
+      <h3>5) Remover ticket</h3>
+      <p><strong>DELETE</strong> <code>/tickets/:id</code></p>
+    </section>
+
+    <section>
+      <h2>🚀 Próximos passos</h2>
+      <ul>
+        <li>Adicionar validações de payloads</li>
+        <li>Implementar testes automatizados</li>
+        <li>Migrar para banco real (SQLite/Postgres)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por <strong>Natanael Aquino</strong> — Projeto Rocketseat 🚀</p>
+  </footer>
+</body>
+</html>
