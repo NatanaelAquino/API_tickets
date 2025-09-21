@@ -1,0 +1,22 @@
+{
+  "tickets": [
+    {
+      "id": "6bf7e184-394b-4208-a855-60a1f7c2c7d5",
+      "description": "Computador não liga",
+      "user_name": "Natanael",
+      "status": "closed",
+      "create_at": "2025-09-20T22:38:10.839Z",
+      "updated_at": "2025-09-21T00:18:45.946Z",
+      "equipamento": "Teclado"
+    },
+    {
+      "id": "653288a6-ed9b-4892-b1d0-d976d1a9c966",
+      "description": "Computador não liga",
+      "user_name": "Natanael",
+      "status": "closed",
+      "create_at": "2025-09-20T22:38:11.292Z",
+      "updated_at": "2025-09-21T00:18:29.370Z",
+      "equipamento": "Mouse"
+    }
+  ]
+}
